@@ -6,5 +6,5 @@
     ```
     php artisan migrate
     ```
-
+* Change the value __url__ in ```app/config/app.php``` to the url of that you will setup the application in local environment
 
