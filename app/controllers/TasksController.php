@@ -15,7 +15,7 @@ class TasksController extends \BaseController {
 	 */
 	public function index()
 	{
-    $tasks = Task::paginate(5);
+    $tasks = Auth::user()->tasks()->paginate(5);
     return View::make('tasks.index')->with('tasks', $tasks);
 	}
 
